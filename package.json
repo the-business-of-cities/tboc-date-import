@@ -1,0 +1,30 @@
+{
+  "name": "tboc-date-import",
+  "version": "1.0.0",
+  "description": "Generate and import dates into contentful",
+  "main": "src/index.js",
+  "babel": {
+    "presets": [
+      "mcclowes"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "mcclowes"
+  },
+  "scripts": {
+    "build": "node --harmony scripts/generateJSON",
+    "export": "contentful space export --config contentful-export-config.json",
+    "format": "mcclowes-scripts format",
+    "import": "contentful space import --config contentful-import-config.json"
+  },
+  "author": "Max Clayton Clowes <maxcc@me.com>",
+  "license": "ISC",
+  "dependencies": {
+    "csvtojson": "^2.0.4",
+    "fs": "0.0.1-security",
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "mcclowes-scripts": "^0.3.6"
+  }
+}
