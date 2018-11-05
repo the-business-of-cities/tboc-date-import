@@ -1,5 +1,7 @@
 #tboc-date-import
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/the-business-of-cities/tboc-date-import.svg)](https://greenkeeper.io/)
+
 ## Setup
 
 `npm install`
